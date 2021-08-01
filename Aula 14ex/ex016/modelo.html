@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de exercício</title>
+    <title>Contador</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,24 +12,18 @@
         <h1>Vamos contar</h1>
     </header>
     <section>
-        <div>
-            Início
-            <input type="number" name="txtinicio" id="txtinicio">
+
+        <div id="dados">
+            <p>Início: <input type="number" name="inicio" id="txti"></p>
+            <p>Fim: <input type="number" name="fim" id="txtf"></p>
+            <p>Passo: <input type="number" name="passo" id="txtp"></p>
+            <p><input type="button" value="Contar" onclick="contar()"></p>
         </div>
-        <div>
-            Fim
-            <input type="number" name="txtfim" id="txtfim">
-        </div>
-        <div>
-            Contagem pulando:
-            <input type="number" name="txtpasso" id="txtpasso">  
-        </div>
-        <div>
-            <input type="button" value="Contar" onclick="contar()">
-        </div>
+
         <div id="res">
-            Contando:
+            <p>Preparando a contagem...</p>
         </div>
+
     </section>
     <footer>
         <p>&copy; Curso em Vídeo</p>
